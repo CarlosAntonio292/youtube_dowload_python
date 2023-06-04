@@ -14,7 +14,7 @@ tempo = yt.length
 
 if tempo > 60 and tempo < 3200:
    tempo = tempo/60
-   tempo = f'duração: {round(tempo,0)} minutos'
+   tempo = f'duração: {round(tempo,0)} minuto'
 elif tempo >= 3200:
    tempo = tempo/3200
    tempo = f'duração: {round(tempo,0)} horas'
@@ -68,7 +68,7 @@ while True:
    if resolucao == 'A':
        baixar = yt.streams.get_highest_resolution()
        break
-   elif resolucao == 'b':
+   elif resolucao == 'B':
        baixar = yt.streams.get_lowest_resolution()
        break
    else:
